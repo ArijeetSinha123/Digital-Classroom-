@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Classroom</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgb(139, 203, 168) 0%, rgb(58, 183, 169) 50%, rgb(227, 239, 238) 100%);
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 100px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2em; /* Adjusted font size */
+            margin-bottom: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            background: linear-gradient(90deg, #4334a7, #194e4d); /* Pink and purple gradient text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Increased shadow */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h2{
+            font-size: 1em; /* Adjusted font size */
+            margin-bottom: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            background: linear-gradient(90deg, #4334a7, #194e4d); /* Pink and purple gradient text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Increased shadow */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .button-student, .button-teacher, .button-admin
+        {
+            width: 9em;
+            height: 3em;
+            border-radius: 30em;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #2a404c; /* Darker neon purple color */
+            text-decoration: none;
+            text-transform: uppercase;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+            margin: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .button-student::before, .button-teacher::before, .button-admin::before{
+            content: '';
+            width: 0;
+            height: 3em;
+            border-radius: 30em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+
+        .button-student:hover::before, .button-teacher:hover::before, .button-admin:hover::before{
+            width: 9em;
+        }
+    </style>
+    <!-- Linking Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Digital Classroom</h1>
+        <h2>Welcome to the home page</h2>
+        <a href="student_info.html" class="button-student">Student Login</a>
+        <a href="teacher_info.html" class="button-teacher">Teacher Login</a>
+        <a href="admin.html" class="button-admin">ADMIN Login</a>
+
+        
+    </div>
+</body>
+</html>
