@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        body {
+            font-family: Arial;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgb(139, 203, 168) 0%, rgb(58, 183, 169) 50%, rgb(227, 239, 238) 100%);
+        }
+        .login-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .login-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #218838;
+        }
+        /* Styles for the register link */
+        .register-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Student Login</h1>
+        <form action="dashboard.html" method="GET">
+            <input type="text" name="username" placeholder="Enter Username" required><br>
+            <input type="password" name="password" placeholder="Enter Password" required><br>
+            <button class="login-btn" type="submit">Login</button>
+        </form>
+        <p class="register-link">New student? <a href="STUDENT_REGISTRATION.html">Register here</a></p>
+    </div>
+</body>
+</html>
